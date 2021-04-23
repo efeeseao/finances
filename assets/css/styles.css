@@ -5,6 +5,7 @@
   --title: #363f5f;
   --green: #3dd705;
   --greenDark: #49AA26;
+  --red: #e92929;
 
 }
 
@@ -39,6 +40,36 @@ a:hover {
 .button.new {
   display: inline-block;
   margin-bottom: .8rem;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  color: #fff;
+  background: var(--greenDark);
+  padding: 0;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(90%);
+}
+
+.button.cancel {
+  color: var(--red);
+  border: 2px solid var(--red);
+  border-radius: 0.25rem;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+}
+
+.button.cancel:hover {
+  opacity: 1;
 }
 
 .sr-only {
@@ -164,7 +195,7 @@ td.income {
 }
 
 td.expense {
-  color: #e92929;
+  color: var(--red);
 }
 
 .modal-overlay {
@@ -190,6 +221,42 @@ td.expense {
 .modal {
   background: #F0F2f5;
   padding: 2.4rem;
+}
+
+#form {
+  max-width: 500px;
+}
+
+#form h2 {
+  margin-top: 0;
+}
+
+input {
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.8rem;
+  width: 100%;
+  margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.input-group {
+  margin-bottom: 0.8rem;
+}
+
+.input-group small {
+  opacity: 0.4;
+}
+
+.input-group.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-group.actions .button,
+.input-group.actions button {
+  width: 48%;
 }
 
 footer {
