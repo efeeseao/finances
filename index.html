@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <title>Minhas Finanças</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/images/logo.svg" alt="Logo Dev Finances" />
+    </header>
+
+    <main class="container">
+      <section id="balance">
+        <h2 class="sr-only">Balanço</h2>
+
+        <div class="card">
+          <h3>
+            <span>Entradas</span>
+            <img src="./assets/images/income.svg" alt="Imagem de entradas" />
+          </h3>
+          <p>50000 A0A</p>
+        </div>
+        <div class="card">
+          <h3>
+            <span>Saídas</span>
+            <img src="./assets/images/expense.svg" alt="Imagem de saídas" />
+          </h3>
+          <p>25000 A0A</p>
+        </div>
+        <div class="card total">
+          <h3>
+            <span>Total</span>
+            <img src="./assets/images/total.svg" alt="Imagem de total" />
+          </h3>
+          <p>10000 A0A</p>
+        </div>
+      </section>
+
+      <section id="transation">
+        <h2 class="sr-only">Transações</h2>
+
+        <a href="#" class="button new">+ Nova Transação</a>
+
+        <table id="data-table">
+          <thead>
+            <tr>
+              <th>Descrição</th>
+              <th>Valor</th>
+              <th>Data</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="description">Internet</td>
+              <td class="expense">-14,000 A0A</td>
+              <td class="date">22/04/2021</td>
+              <td>
+                <img src="./assets/images/minus.svg" alt="Remover transação" />
+              </td>
+            </tr>
+            <tr>
+              <td class="description">Roupa</td>
+              <td class="expense">-20,000 A0A</td>
+              <td class="date">22/04/2021</td>
+              <td>
+                <img src="./assets/images/minus.svg" alt="Remover transação" />
+              </td>
+            </tr>
+            <tr>
+              <td class="description">Website</td>
+              <td class="income">500,000 A0A</td>
+              <td class="date">22/04/2021</td>
+              <td>
+                <img src="./assets/images/minus.svg" alt="Remover transação" />
+              </td>
+            </tr>
+            <tr>
+              <td>Luz</td>
+              <td class="expense">-5,000 A0A</td>
+              <td class="date">22/04/2021</td>
+              <td>
+                <img src="./assets/images/minus.svg" alt="Remover transação" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>Minhas Finanças &copy; Todos os direitos reservados</p>
+    </footer>
+  </body>
+</html>

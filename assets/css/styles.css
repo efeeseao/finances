@@ -1,0 +1,187 @@
+:root {
+  --background: #f0f2f5;
+  --header: #2D4A22;
+  --white: #fff;
+  --title: #363f5f;
+  --green: #3dd705;
+  --greenDark: #49AA26;
+
+}
+
+*, 
+*::before, 
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 93.75%;
+}
+
+body {
+  font-weight: 400;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: var(--background);
+}
+
+a {
+  color: var(--greenDark);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--green);
+}
+
+.button.new {
+  display: inline-block;
+  margin-bottom: .8rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border-width: 0;
+  white-space: nowrap;
+}
+
+.container {
+  width: min(90vw, 800px);
+  margin: auto;
+}
+
+h2 {
+  margin-top: 3.2rem;
+  margin-bottom: 0.8rem;
+  color: var(--title);
+  font-weight: normal;
+}
+
+header {
+  background: var(--header);
+  padding: 2rem 0 10rem;
+  text-align: center;
+}
+
+#logo {
+  color: var(--white);
+  font-weight: bold;
+}
+
+#balance {
+  margin-top: -8rem;
+}
+
+#balance h2 {
+  color: var(--white);
+  margin-top: 0;
+}
+
+.card {
+  background: var(--white);
+  padding: 1.5rem 2rem;
+  border-radius: 0.25rem;
+
+  margin-bottom: 2rem;
+  color: var(--title);
+}
+
+.card h3 {
+  font-weight: normal;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card p {
+  line-height: 3rem;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.card.total {
+  background: var(--greenDark);
+  color: var(--white);
+}
+
+#transation {
+  width: 100%;
+  display: block;
+  overflow-x: auto;
+}
+
+#data-table {
+  width: 100%;
+  border-spacing: 0 0.5rem;
+  color: #969cb3;
+}
+
+table tbody tr {
+  opacity: 0.7;
+}
+
+table tbody tr:hover {
+  opacity: 1;
+}
+
+table thead th {
+  background: var(--white);
+  opacity: 0.6;
+  padding: 1rem 2rem;
+  text-align: left;
+}
+
+table tbody td {
+  background: var(--white);
+  padding: 1rem 2rem;
+}
+
+table thead tr th:first-child,
+table tbody tr td:first-child {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+table thead tr th:last-child,
+table tbody tr td:last-child {
+  border-radius: 0 .25rem .25rem 0;
+}
+
+td.description {
+  color: var(--title);
+}
+
+td.income {
+  color: #12a454;
+}
+
+td.expense {
+  color: #e92929;
+}
+
+footer {
+  text-align: center;
+  padding: 4rem 0 2rem;
+  opacity: 0.6;
+  color: var(--title);
+}
+
+@media (min-width: 800px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  #balance {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
