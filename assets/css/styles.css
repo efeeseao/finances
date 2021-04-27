@@ -1,11 +1,15 @@
 :root {
   --background: #f0f2f5;
-  --header: #2D4A22;
   --white: #fff;
   --title: #363f5f;
-  --green: #3dd705;
-  --greenDark: #49AA26;
   --red: #e92929;
+
+  --darkAccent: rgb(81,38,159);
+  --green: rgb(3,168, 124);
+  --lightGreen: rgb(204,255,191);
+  --lightGray: rgb(238,239,239);
+  --dark: rgb(40,47,54);
+  --black: rgb(17,17,17);
 
 }
 
@@ -29,12 +33,8 @@ body {
 }
 
 a {
-  color: var(--greenDark);
-  text-decoration: none;
-}
-
-a:hover {
   color: var(--green);
+  text-decoration: none;
 }
 
 .button.new {
@@ -47,7 +47,7 @@ button {
   height: 50px;
   border: none;
   color: #fff;
-  background: var(--greenDark);
+  background: var(--green);
   padding: 0;
   border-radius: 0.25rem;
   cursor: pointer;
@@ -97,7 +97,7 @@ h2 {
 }
 
 header {
-  background: var(--header);
+  background: var(--darkAccent);
   padding: 4rem 0 14rem;
   text-align: center;
 }
@@ -146,7 +146,7 @@ header h1 {
 }
 
 .card.total {
-  background: var(--greenDark);
+  background: var(--green);
   color: var(--white);
 }
 
