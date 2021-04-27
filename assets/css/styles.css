@@ -98,8 +98,14 @@ h2 {
 
 header {
   background: var(--header);
-  padding: 2rem 0 10rem;
+  padding: 4rem 0 14rem;
   text-align: center;
+}
+
+header h1 {
+  color: var(--white);
+  font-size: 3rem;
+  line-height: 2rem;
 }
 
 #logo {
